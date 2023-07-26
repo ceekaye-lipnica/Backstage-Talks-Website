@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .page{
+        @apply px-[1rem] py-[1.5rem] bg-rose;
+    }
+
+    .branding img{
+        @apply w-[10rem] lg:w-[15rem]
+    }
+
+    .page__wrapper{
+        @apply flex flex-col gap-[2rem];
+    }
+
+    .page-item{
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .page-img{
+        @apply w-[25rem] lg:w-[30rem];
+    }
+
+    .page-text, .text-pink{
+        @apply text-center;
+    }
+
+    .page-text h3, .text-pink h3{
+        @apply text-dark font-bold text-[1.1rem] mb-[1.5rem] ;
+    }
+
+    .page-text p, .text-pink p{
+        @apply font-medium text-dark;
+    }
+
+    .page-text p a{
+        @apply text-white hover:underline; 
+    }
+
+    .text-pink p{
+        @apply text-dark;
+    } 
+
+    .text-pink a{
+        @apply text-pink-600 hover:underline; 
+    }
+
+    .page-description p{
+        @apply mt-[2rem] text-dark font-bold text-center text-[1rem] w-[28rem] mx-auto lg:mx-0 lg:w-[18rem] lg:text-left lg:text-[1.15rem];
+    }
+
+    .page-description h4{
+        @apply text-[.7rem] text-center mt-[.5rem] text-dark;
+    }
+
+    .page-description h4 a{
+        @apply underline hover:no-underline;
+    }
+
+    .page-policy{
+        @apply flex flex-col items-center gap-[2rem] mt-[2rem]
+    }
+
+    .page-policy a{
+        @apply font-bold text-dark text-[1.1rem]
+    }
+
+    .page-policy a:first-child{
+        @apply underline hover:no-underline;
+    }
+
+    .page-policy a:last-child{
+        @apply hover:underline;
+    }
+
+}
